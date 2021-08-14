@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+    color: rgb(82, 75, 75);
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: cursive;
+    height: 13vh;
+    width: 100%;
+    background-color: lightpink;
+}
+
+.container {
+    background-color: lightpink;
+    color: black;
+    /* height: 100%; */
+}
+
+.container, 
+.input-container, 
+.task-container {
+    border: 1px solid;
+}
+
+.input-container {
+    height: 20vh;
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+    background-color: dimgray;
+    border: 3px dashed white;
+}
+
+.task-container {
+    height: 80vh; 
+    /* overflow-x: scroll; */
+    
+}
+
+.task-input {
+    border: 7px double black;
+    text-align: center;
+    font-size: 1.5rem;
+    height: 4rem;
+    width: 30%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* margin: auto; */
+}
+
+.task-container li {
+    font-size: 1.5rem;
+    list-style: none;
+    background-color: rgb(233, 134, 167);
+    cursor: pointer;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+    border: dashed black;
+}
+.task-list {
+    padding-left: 0;
+}
+
+.task-list li:hover {
+    background-color: rgb(168, 64, 99);
+
+}
+
+@media screen and (max-width: 700px) {
+    .task-input, 
+    .task-container li {
+        width: 70%;
+    }
+}
